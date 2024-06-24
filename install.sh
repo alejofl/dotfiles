@@ -28,5 +28,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ./formulae.sh
 ./apps.sh
 
+# Configure VSCode
+sudo cp config_files/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+sudo cp config_files/vscode/extensions.json $HOME/.vscode/extensions/extensions.json
+
 # Configure macOS things
 pwpolicy -clearaccountpolicies

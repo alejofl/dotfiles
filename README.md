@@ -6,6 +6,13 @@ All of the scripts and config files are aimed at macOS, but some of them may wor
 
 ## Execution
 
+* First, install Xcode Command Line Tools (Git) and Homebrew:
+
+```bash
+xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 * Install all apps and tools, configure ZSH and Git:
 
 ```bash

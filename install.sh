@@ -1,3 +1,7 @@
+# Prerequisites: Git and Homebrew
+# xcode-select --install
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 # Configure ZSH
 mkdir $HOME/.zsh
 cp zsh/functions.sh $HOME/.zsh/functions.sh
@@ -7,12 +11,6 @@ cp zsh/.zshrc $HOME/.zshrc
 # Config Files
 cp config_files/.gitconfig $HOME/.gitconfig
 cp config_files/.gitauthors $HOME/.gitauthors
-
-# Install Git
-xcode-select --install
-
-# Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Configure PATH
 sudo sh -c 'cat /etc/paths > /etc/paths.d/10-apple'

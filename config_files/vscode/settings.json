@@ -7,20 +7,9 @@
     "javascript.updateImportsOnFileMove.enabled": "never",
     "editor.minimap.autohide": true,
     "editor.minimap.renderCharacters": false,
-    "remote.SSH.useFlock": false,
-    "remote.SSH.connectTimeout": 300,
-    "remote.SSH.enableAgentForwarding": false,
     "liveServer.settings.donotVerifyTags": true,
-    "js-beautify.extra_liners": [
-        "head",
-        "body",
-        "/html"
-    ],
     "emmet.includeLanguages": {
         "ejs": "html",
-    },
-    "[html]": {
-        "editor.defaultFormatter": "j69.ejs-beautify"
     },
     "todohighlight.defaultStyle": {
         "isWholeLine": true,
@@ -47,19 +36,5 @@
     "markdown-mermaid.languages": [
         "mermaid"
     ],
-    "gitlens.codeLens.enabled": false,
-    "gitlens.views.workspaces.pullRequests.enabled": false,
-    "gitlens.views.workspaces.showUpstreamStatus": false,
-    "gitlens.views.workspaces.pullRequests.showForBranches": false,
-    "gitlens.views.workspaces.showCommits": false,
-    "gitlens.views.workspaces.pullRequests.showForCommits": false,
-    "gitlens.views.workspaces.showBranches": false,
-    "gitlens.views.workspaces.showRemotes": false,
-    "gitlens.views.workspaces.showStashes": false,
-    "gitlens.views.workspaces.showTags": false,
-    "gitlens.views.workspaces.showContributors": false,
-    "gitlens.views.workspaces.showWorktrees": false,
-    "gitlens.views.workspaces.avatars": false,
-    "gitblame.inlineMessageEnabled": true,
     "workbench.colorTheme": "Atom One Dark",
 }

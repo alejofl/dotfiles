@@ -171,6 +171,8 @@
 	oACnAN4BFgEYARoBHAEjASgBLgEwATIBNA2ADYUNkA2ZDaYNqQ22Db8NxA3MAAAAAAAA
 	AgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAADc8=
 	</data>
+	<key>SetLanguageEnvironmentVariables</key>
+	<false/>
 	<key>ShowActiveProcessArgumentsInTitle</key>
 	<true/>
 	<key>ShowActiveProcessInTabTitle</key>
@@ -344,7 +346,7 @@
 	<key>columnCount</key>
 	<integer>120</integer>
 	<key>name</key>
-	<string>Alejo's</string>
+	<string>Alejo</string>
 	<key>rowCount</key>
 	<integer>36</integer>
 	<key>type</key>

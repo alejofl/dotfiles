@@ -3,3 +3,5 @@
 	email = alejo@misterflores.com
 [init]
 	defaultBranch = master
+[core]
+	excludesfile = ~/.gitignore

@@ -13,7 +13,7 @@ ls_backgrounds() {
 }
 
 jsoncurl() {
-  curl -i -s $* -H "Content-Type:" -H "Content-Type: application/json" | awk -v RS='\r\n\r\n' -v ORS='\n\n' 'NR==1; NR>1 {print $0 | "jaq --color always ." }'
+  curl -i -s $* -H "Content-Type:" -H "Content-Type: application/json" | awk -v RS='\r\n\r\n' -v ORS='\n\n' 'NR==1; NR>1 {print $0 | "jaq --color-output ." }'
 }
 
 venv() {

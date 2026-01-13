@@ -1,0 +1,7 @@
+font-size = 16
+theme = dracula+
+cursor-style = block
+working-directory = home
+window-padding-x = 10
+window-height = 36
+window-width = 120

@@ -1,6 +1,7 @@
 if [ -d "$HOME/.zsh" ]; then
     source $HOME/.zsh/functions.sh
     source $HOME/.zsh/prompt.sh
+    source $HOME/.zsh/path.sh
 fi
 
 export LANG="en_US.UTF-8"

@@ -2,6 +2,6 @@
 	name = Alejo Flores Lucey
 	email = alejo@misterflores.com
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [core]
 	excludesfile = ~/.gitignore

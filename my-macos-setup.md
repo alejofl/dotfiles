@@ -37,20 +37,6 @@
 33. Trackpad > More Gestures > Show Desktop: on
 34. Users & Groups > Change Password...
 
-## Configure Terminal
-
-1. Open Terminal
-2. Go to Terminal > Settings... > Profiles > Three dots > Import...
-
-![](./images/terminal-config.png)
-
-3. Select `./config_files/MyProfile.terminal`
-4. Go to Terminal > Settings... > General
-    1. On Startup, open: New window with profile: MyProfile
-    2. Shell opens with: Default login shell
-    3. New windows open with: Default Profile; Default Working Directory
-    4. New tabs open with: Same Profile; Same Working Directory
-
 ### Configure `zsh`
 
 1. Configure visuals:
@@ -68,16 +54,7 @@ cp zsh/.zshrc $HOME/.zshrc
 cp config_files/.gitconfig $HOME/.gitconfig
 cp config_files/.gitauthors $HOME/.gitauthors
 cp config_files/.gitignore $HOME/.gitignore
-cp config_files/.npmrc $HOME/.npmrc
-```
-
-3. Configure PATH
-
-```bash
-sudo sh -c 'cat /etc/paths > /etc/paths.d/10-apple'
-sudo sh -c 'echo "" > /etc/paths'
-sudo sh -c 'echo "/opt/homebrew/bin" > /etc/paths.d/01-homebrew'
-sudo sh -c 'echo "/opt/homebrew/sbin" >> /etc/paths.d/01-homebrew'
+mkdir $HOME/.config/ghostty && cp config_files/ghostty $HOME/.config/ghostty/config
 ```
 
 ## Install Applications
@@ -90,6 +67,7 @@ brew install mas
 brew install --cask 1password
 brew install --cask arc
 brew install --cask docker
+brew install --cask ghostty
 brew install --cask iina
 brew install --cask jetbrains-toolbox
 brew install --cask motrix
@@ -111,8 +89,6 @@ mas install 462058435 # Microsoft Excel
 mas install 462062816 # Microsoft PowerPoint
 mas install 462054704 # Microsoft Word
 brew install --cask whatsapp
-brew install --cask wireshark
-brew install --cask zoom
 ```
 
 ## Install Terminal Packages
@@ -123,7 +99,6 @@ brew install --cask zoom
 brew install ffmpeg
 brew install jaq
 brew install maven
-brew install postgresql@15
 brew install tree
 brew install watch
 ```
@@ -148,20 +123,13 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 source ~/.zshrc
 nvm install --lts
-
-mkdir ~/.pnpm
-mkdir ~/.pnpm/store
-corepack enable pnpm
 ```
 
 4. Other special packages
 
 ```bash
 git clone https://github.com/alejofl/git-coauthor.git $HOME/.git-coauthor
-sudo sh -c 'echo "$HOME/.git-coauthor" > /etc/paths.d/100-git-coauthor'
-
 brew install --cask mactex-no-gui
-sudo sh -c 'echo "/Library/TeX/texbin" > /etc/paths.d/100-tex'
 ```
 
 ## Configure Applications
@@ -191,7 +159,6 @@ sudo sh -c 'echo "/Library/TeX/texbin" > /etc/paths.d/100-tex'
 * CMake (twxs)
 * Docker (Microsoft)
 * gettext (MrOrz)
-* GitHub Copilot (GitHub)
 * GitHub Copilot Chat (GitHub)
 * GitHub Markdown Preview (Matt Bierner) (Extension Pack)
 * Hex Editor (Microsoft)
@@ -204,7 +171,7 @@ sudo sh -c 'echo "/Library/TeX/texbin" > /etc/paths.d/100-tex'
 * Python Debugger (Microsoft)
 * Python Extension Pack (Don Jayamanne) (Extension Pack)
 * Rainbow CSV (mechatroner)
-* Swagger Viewer (Arjun G)
+* Tailwind CSS IntelliSense (Tailwind Labs)
 * x86 and x86_64 Assembly (13xforever)
 * YAML (Red Hat)
 
